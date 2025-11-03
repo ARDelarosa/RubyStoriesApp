@@ -22,10 +22,11 @@
         <h2>Stories</h2>
       </div>
       <ul class="sidebar-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Write a Story</a></li>
-        <li><a href="#">Browse Stories</a></li>
-        <li><a href="#">About</a></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Write a Story", new_story_path %></li>
+        <li><%= link_to "Browse Stories", stories_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", new_signup_path %></li>
       </ul>
     </nav>
 
@@ -36,6 +37,15 @@
 
     <!-- Page content wrapper -->
     <div class="page-wrapper" id="pageContent">
+
+    <% if notice %>
+      <div class="alert alert-success text-center mb-0"><%= notice %></div>
+    <% end %>
+
+    <% if alert %>
+      <div class="alert alert-danger text-center mb-0"><%= alert %></div>
+    <% end %>
+
       <%= yield %>
     </div>
 

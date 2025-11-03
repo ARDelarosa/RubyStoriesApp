@@ -7,7 +7,35 @@ body {
 /* --- Main Section --- */
 .main-section {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Add a darker overlay behind the text */
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+
+  color: #f8f9fa;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.main-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.main-section p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
 /* --- Supporting Section --- */
@@ -139,4 +167,104 @@ body {
   .page-wrapper.shifted {
     transform: none;
   }
+}
+
+/* =========================
+   ABOUT PAGE SECTIONS
+   ========================= */
+
+/* Big hero section at the top of /about */
+.about-main-section {
+  min-height: 60vh;
+  padding: 4rem 1rem;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-main-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-main-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* =========================
+   STORY SHOW PAGE
+   ========================= */
+
+.story-page {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.story-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+  font-family: 'Roboto', 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.story-meta {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.story-body {
+  color: #343a40;
+  word-break: break-word;
+  white-space: pre-wrap;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+/* Optional: give paragraphs in the story body some spacing */
+.story-body p {
+  margin-bottom: 1.25rem;
+}
+
+/* Make the hr a little softer */
+.story-page hr {
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ============= THANKS PAGE ============= */
+.thanks-section {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+  text-shadow: 0 2px 8px rgba(0,0,0,.7);
+  padding: 2rem;
+}
+
+.thanks-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.thanks-section .lead {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }

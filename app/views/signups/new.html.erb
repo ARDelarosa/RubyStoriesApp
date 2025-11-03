@@ -1,0 +1,23 @@
+<!-- app/views/signups/new.html.erb -->
+
+<section class="signup-main-section d-flex align-items-center justify-content-center text-center text-white">
+  <div class="overlay"></div>
+  <div class="signup-form-container p-5 rounded shadow-lg">
+    <h1 class="mb-4">Stay in Touch</h1>
+    <p class="lead mb-4">Sign up to receive updates and new story highlights.</p>
+
+    <%= form_with(model: @signup, local: true) do |form| %>
+      <div class="mb-3 text-start">
+        <%= form.label :firstname, "First Name", class: "form-label fw-semibold" %>
+        <%= form.text_field :firstname, class: "form-control" %>
+      </div>
+
+      <div class="mb-3 text-start">
+        <%= form.label :email, "Email", class: "form-label fw-semibold" %>
+        <%= form.email_field :email, class: "form-control" %>
+      </div>
+
+      <%= form.submit "Sign Up", class: "btn btn-primary btn-lg w-100" %>
+    <% end %>
+  </div>
+</section>

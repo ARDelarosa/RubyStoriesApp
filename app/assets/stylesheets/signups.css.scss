@@ -1,0 +1,60 @@
+/* =========================
+   SIGNUPS / CONTACT PAGE
+   ========================= */
+
+.signup-main-section {
+  position: relative;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?fit=crop&w=1600&q=80")
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Optional overlay effect */
+.signup-main-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* The container that holds the form */
+.signup-form-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  max-width: 450px;
+  width: 100%;
+}
+
+.signup-form-container h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.signup-form-container .form-control {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.signup-form-container .btn-primary {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

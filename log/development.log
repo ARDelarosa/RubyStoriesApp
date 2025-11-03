@@ -1,220 +1,69 @@
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:02:53 +0000
-Cannot render console from 10.20.11.52! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 642)
-  Rendered layout layouts/application.html.erb (Duration: 260.0ms | Allocations: 97473)
-Completed 500 Internal Server Error in 272ms (ActiveRecord: 0.0ms | Allocations: 103816)
-
-
-  
-ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
-Declare links to your assets in `app/assets/config/manifest.js`.
-
-  //= link application.js
-
-and restart your server):
-    40:     </div>
-    41: 
-    42:     <!-- JS include goes here -->
-    43:     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-    44:     </body>
-    45: </html>
-  
-app/views/layouts/application.html.erb:43
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:04:12 +0000
+Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:2589:8f76:8cb1:26b5 at 2025-11-03 23:37:53 +0000
 Cannot render console from 10.20.12.172! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PagesController#home as HTML
   Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
   Rendering layout layouts/application.html.erb
   Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5342)
-Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 5622)
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 642)
+  Rendered layout layouts/application.html.erb (Duration: 258.4ms | Allocations: 83969)
+Completed 200 OK in 274ms (Views: 263.5ms | ActiveRecord: 0.0ms | Allocations: 90397)
 
 
-  
-ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
-Checked in these paths: 
-  /home/ccuser/workspace/learn-rails_stories/stories/app/assets/config
-  /home/ccuser/workspace/learn-rails_stories/stories/app/assets/images
-  /home/ccuser/workspace/learn-rails_stories/stories/app/assets/javascripts
-  /home/ccuser/workspace/learn-rails_stories/stories/app/assets/stylesheets
-  /home/ccuser/.gem/ruby/3.0.0/gems/stimulus-rails-1.0.2/app/assets/javascripts
-  /home/ccuser/.gem/ruby/3.0.0/gems/turbo-rails-1.0.0/app/assets/javascripts
-  /home/ccuser/.gem/ruby/3.0.0/gems/importmap-rails-1.0.1/app/assets/javascripts
-  /home/ccuser/.gem/ruby/3.0.0/gems/actioncable-7.0.0/app/assets/javascripts
-  /home/ccuser/.gem/ruby/3.0.0/gems/actiontext-7.0.0/app/assets/javascripts
-  /home/ccuser/.gem/ruby/3.0.0/gems/actiontext-7.0.0/app/assets/stylesheets
-  /home/ccuser/.gem/ruby/3.0.0/gems/activestorage-7.0.0/app/assets/javascripts
-  /home/ccuser/.gem/ruby/3.0.0/gems/actionview-7.0.0/lib/assets/compiled
-  /home/ccuser/workspace/learn-rails_stories/stories/app/javascript
-  /home/ccuser/workspace/learn-rails_stories/stories/vendor/javascript):
-    40:     </div>
-    41: 
-    42:     <!-- JS include goes here -->
-    43:     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-    44:     </body>
-    45: </html>
-  
-app/assets/javascripts/application.js:5
-app/views/layouts/application.html.erb:43
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:05:46 +0000
+Started GET "/about" for 2600:8801:c815:ee00:2589:8f76:8cb1:26b5 at 2025-11-03 23:37:56 +0000
+Cannot render console from 10.20.12.172! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2379)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2747)
+
+
+Started GET "/signups/new" for 2600:8801:c815:ee00:2589:8f76:8cb1:26b5 at 2025-11-03 23:37:58 +0000
 Cannot render console from 10.20.10.151! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
+Processing by SignupsController#new as HTML
   Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 21021)
-Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 21297)
+  Rendering signups/new.html.erb within layouts/application
+  Rendered signups/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1895)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3956)
+Completed 200 OK in 24ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 10088)
 
 
-  
-ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
-Declare links to your assets in `app/assets/config/manifest.js`.
+Started POST "/signups" for 2600:8801:c815:ee00:2589:8f76:8cb1:26b5 at 2025-11-03 23:38:04 +0000
+Cannot render console from 10.20.12.172! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SignupsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "signup"=>{"firstname"=>"dru", "email"=>"Drewsky5ne@yahoo.com"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/signups_controller.rb:9:in `create'
+  [1m[36mSignup Create (0.3ms)[0m  [1m[32mINSERT INTO "signups" ("firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["firstname", "dru"], ["email", "Drewsky5ne@yahoo.com"], ["created_at", "2025-11-03 23:38:04.595701"], ["updated_at", "2025-11-03 23:38:04.595701"]]
+  ↳ app/controllers/signups_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/signups_controller.rb:9:in `create'
+Redirected to https://f5cdac57fd2a4310a15622bad09a1213.cc-propeller.cloud/thanks
+Completed 302 Found in 9ms (ActiveRecord: 4.6ms | Allocations: 3151)
 
-  //= link application.js
 
-and restart your server):
-    40:     </div>
-    41: 
-    42:     <!-- JS include goes here -->
-    43:     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-    44:     </body>
-    45: </html>
-  
-app/views/layouts/application.html.erb:43
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:06:15 +0000
+Started GET "/thanks" for 2600:8801:c815:ee00:2589:8f76:8cb1:26b5 at 2025-11-03 23:38:04 +0000
+Cannot render console from 10.20.11.52! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#thanks as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/thanks.html.erb within layouts/application
+  Rendered pages/thanks.html.erb within layouts/application (Duration: 0.6ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2336)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 2702)
+
+
+Started GET "/" for 2600:8801:c815:ee00:2589:8f76:8cb1:26b5 at 2025-11-03 23:38:09 +0000
 Cannot render console from 10.20.11.52! Allowed networks: 127.0.0.0/127.255.255.255, ::1
 Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
   Rendering layout layouts/application.html.erb
   Rendering pages/home.html.erb within layouts/application
   Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 23502)
-Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 23778)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2175)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2486)
 
 
-  
-ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
-Declare links to your assets in `app/assets/config/manifest.js`.
-
-  //= link application.js
-
-and restart your server):
-    40:     </div>
-    41: 
-    42:     <!-- JS include goes here -->
-    43:     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-    44:     </body>
-    45: </html>
-  
-app/views/layouts/application.html.erb:43
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:06:36 +0000
-Cannot render console from 10.20.10.49! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 19948)
-Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 20224)
-
-
-  
-ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
-Declare links to your assets in `app/assets/config/manifest.js`.
-
-  //= link application.js
-
-and restart your server):
-    40:     </div>
-    41: 
-    42:     <!-- JS include goes here -->
-    43:     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-    44:     </body>
-    45: </html>
-  
-app/views/layouts/application.html.erb:43
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:06:50 +0000
-Cannot render console from 10.20.12.172! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 21763)
-Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 22100)
-
-
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:12:00 +0000
-Cannot render console from 10.20.12.172! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 5942)
-Completed 200 OK in 17ms (Views: 16.4ms | Allocations: 6246)
-
-
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:16:42 +0000
-Cannot render console from 10.20.12.172! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 538)
-  Rendered layout layouts/application.html.erb (Duration: 61.0ms | Allocations: 29634)
-Completed 200 OK in 68ms (Views: 63.1ms | ActiveRecord: 0.0ms | Allocations: 34877)
-
-
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:18:06 +0000
-Cannot render console from 10.20.12.172! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6116)
-Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 6429)
-
-
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:18:29 +0000
-Cannot render console from 10.20.11.250! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2047)
-Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2358)
-
-
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:19:07 +0000
-Cannot render console from 10.20.10.49! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2014)
-Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2321)
-
-
-Started GET "/?allowEmbedForCodecademy=false&allowCopyAndPasteForCodecademy=true&allowFileUploadForCodecademy=true&allowFileDownloadForCodecademy=true&allowExternalLinkForCodecademy=true&allowAICodeExplainForCodecademy=true&allowAIChatAssistantForCodecademy=true&allowAIErrorExplainForCodecademy=true" for 2600:8801:c815:ee00:a8a6:b0a9:7e3d:4739 at 2025-11-01 23:19:55 +0000
-Cannot render console from 10.20.10.151! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-Processing by PagesController#home as HTML
-  Parameters: {"allowEmbedForCodecademy"=>"false", "allowCopyAndPasteForCodecademy"=>"true", "allowFileUploadForCodecademy"=>"true", "allowFileDownloadForCodecademy"=>"true", "allowExternalLinkForCodecademy"=>"true", "allowAICodeExplainForCodecademy"=>"true", "allowAIChatAssistantForCodecademy"=>"true", "allowAIErrorExplainForCodecademy"=>"true"}
-  Rendering layout layouts/application.html.erb
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
-  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2010)
-Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2317)
-
-
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mSignup Load (0.1ms)[0m  [1m[34mSELECT "signups".* FROM "signups"[0m

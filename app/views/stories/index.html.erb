@@ -1,0 +1,28 @@
+<div class="container py-5" style="max-width: 900px;">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h1 class="mb-1">All Stories</h1>
+      <p class="text-muted mb-0">Browse what people are writing.</p>
+    </div>
+
+    <%= link_to "New Story", new_story_path, class: "btn btn-primary" %>
+  </div>
+
+  <% if @stories.any? %>
+    <div class="list-group">
+      <% @stories.each do |story| %>
+        <a href="<%= story_path(story) %>" class="list-group-item list-group-item-action py-4">
+          <h2 class="h4 mb-1"><%= story.title %></h2>
+          <p class="text-muted mb-0" style="font-size: 0.9rem;">
+            Posted <%= time_ago_in_words(story.created_at) %> ago
+          </p>
+        </a>
+      <% end %>
+    </div>
+  <% else %>
+    <div class="text-center text-muted py-5">
+      <p class="mb-3">No stories yet.</p>
+      <%= link_to "Be the first to write one", new_story_path, class: "btn btn-outline-primary btn-lg" %>
+    </div>
+  <% end %>
+</div>
